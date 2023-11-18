@@ -83,8 +83,14 @@ def AnswerTheQuestion(question):
  
 def main():
   st.set_page_config(page_title = 'Chat with PDFs', page_icon = ':books:')
-  st.header('Chat with your Documents!')
-  st.image('cover.png')
+
+  col1, col2 = st.columns(2)
+
+  with col1:
+    st.header('Chat with your Documents!')
+  with col2:
+    st.image('cover.png')  
+    
   st.write('##### First, upload the PDF documents you have and click on Digest! Wait untill processing is finished. Then, you can ask any question about your documents!')
   
   with st.sidebar:
