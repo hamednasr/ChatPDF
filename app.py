@@ -103,7 +103,6 @@ def main():
       chunks = Text2Chunks(text)
       vectorDB = Chunks2vectorDB(chunks)  
       st.session_state.chain = CreateChain(vectorDB)
-      st.write(st.session_state.chain.prompt.template)
 
   question = st.text_input('Question your PDFs here!:  ')
   # placeholder = st.empty()
