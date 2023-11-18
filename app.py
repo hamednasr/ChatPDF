@@ -89,7 +89,7 @@ def main():
   with col1:
     st.header('Chat with your Documents!')
   with col2:
-    st.image('cover.png',width=200)  
+    st.image('cover.png',width=150)  
     
   st.write('##### First, upload the PDF documents you have and click on Digest! Wait untill processing is finished. Then, you can ask any question about your documents!')
   
