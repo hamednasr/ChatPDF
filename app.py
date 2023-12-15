@@ -83,6 +83,7 @@ def AnswerTheQuestion(question):
  
 def main():
   st.set_page_config(page_title = 'Chat with PDFs', page_icon = ':books:')
+  st.write(':red[If this page returns an error, it is probably because the Google generative ai API key is unavailable where the app is running.]')
 
   col1, col2 = st.columns(2)
 
